@@ -1,185 +1,1982 @@
 <!--
   Generated template for the NaranjaPage page.
-
   See http://ionicframework.com/docs/components/#navigation for more info on
   Ionic pages and navigation.
 -->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>naranja</ion-title>
-  </ion-navbar>
+    <ion-navbar>
+      <ion-title>naranja</ion-title>
+    </ion-navbar>
+  
+  </ion-header>
+  
+  
+  <ion-content padding>
+    <p>Quisieramos saber si has tenido <u>problemas</u> con estas conductas <u>durante el mes pasado</u>.</p>
+    <p>Responde con qué frecuencia has tenido problemas con las siguietes conductas en donde:</p>
+    <p>N = si la conducta Nunca fue un problema.</p>
+    <p>O = si la conducta Ocasionalmete fue un problema</p>
+    <p>F = si la conducta Frecuentemente fue un problema</p>
+  
+    <ion-list>
+      <ion-grid>
 
-</ion-header>
+          <ion-row class="formulario" radio-group align-items-center [(ngModel)]="naranja1" justify-content: space-around>
+              <ion-col>
+                  <ion-item>
+                  <ion-label text-wrap color="dark"><h2 align="justify">Tengo arranques de ira.</h2></ion-label>
+                  </ion-item>
+              </ion-col>
+              <ion-col>
+                  <ion-item>
+                      <ion-label>N</ion-label>
+                      <ion-radio value="N1"></ion-radio>
+                  </ion-item>
+              </ion-col>
+              <ion-col>
+                  <ion-item>
+                      <ion-label>O</ion-label>
+                      <ion-radio value="O1"></ion-radio>
+                  </ion-item>
+              </ion-col>
+              <ion-col>
+                  <ion-item>
+                      <ion-label>F</ion-label>
+                      <ion-radio value="F1"></ion-radio>
+                  </ion-item>
+              </ion-col>
+          </ion-row>
+  
+          <ion-row class="formulario" radio-group [(ngModel)]="naranja2" align-items-center justify-content: space-around>
+                <ion-col>
+                  <ion-item>
+                    <ion-label text-wrap color="dark"><h2 align="justify">Cometo errores simples cuando realizo alguna actividad.</h2></ion-label>
+                  </ion-item>
+                </ion-col>
+                <ion-col>
+                    <ion-item>
+                        <ion-label>N</ion-label>
+                        <ion-radio value="N2"></ion-radio>
+                    </ion-item>
+                </ion-col>
+                <ion-col>
+                    <ion-item>
+                        <ion-label>O</ion-label>
+                        <ion-radio value="O2"></ion-radio>
+                    </ion-item>
+                </ion-col>
+                <ion-col>
+                    <ion-item>
+                        <ion-label>F</ion-label>
+                        <ion-radio value="F2"></ion-radio>
+                    </ion-item>
+                </ion-col>
+            </ion-row>
 
+            <ion-row class="formulario" radio-group [(ngModel)]="naranja3" align-items-center justify-content: space-around>
+                    <ion-col>
+                      <ion-item>
+                        <ion-label text-wrap color="dark"><h2 align="justify">Soy desorganizado(a).</h2></ion-label>
+                      </ion-item>
+                    </ion-col>
+                    <ion-col>
+                        <ion-item>
+                            <ion-label>N</ion-label>
+                            <ion-radio value="N3"></ion-radio>
+                        </ion-item>
+                    </ion-col>
+                    <ion-col>
+                        <ion-item>
+                            <ion-label>O</ion-label>
+                            <ion-radio value="O3"></ion-radio>
+                        </ion-item>
+                    </ion-col>
+                    <ion-col>
+                        <ion-item>
+                            <ion-label>F</ion-label>
+                            <ion-radio value="F3"></ion-radio>
+                        </ion-item>
+                    </ion-col>
+                </ion-row>
 
-<ion-content padding>
-  <p>Quisieramos saber si has tenido <u>problemas</u> con estas conductas <u>durante el mes pasado</u>.</p>
-  <p>Responde con qué frecuencia has tenido problemas con las siguietes conductas en donde:</p>
-  <p>N = si la conducta Nunca fue un problema.</p>
-  <p>O = si la conducta Ocasionalmete fue un problema</p>
-  <p>F = si la conducta Frecuentemente fue un problema</p>
+                <ion-row class="formulario" radio-group [(ngModel)]="naranja4" align-items-center justify-content: space-around>
+                        <ion-col>
+                          <ion-item>
+                            <ion-label text-wrap color="dark"><h2 align="justify">Me es difícil concentrarme en las tareas o actividades diarias laborales domésticas, lectura, escuala, trabajo, etc.</h2></ion-label>
+                          </ion-item>
+                        </ion-col>
+                        <ion-col>
+                            <ion-item>
+                                <ion-label>N</ion-label>
+                                <ion-radio value="N4"></ion-radio>
+                            </ion-item>
+                        </ion-col>
+                        <ion-col>
+                            <ion-item>
+                                <ion-label>O</ion-label>
+                                <ion-radio value="O4"></ion-radio>
+                            </ion-item>
+                        </ion-col>
+                        <ion-col>
+                            <ion-item>
+                                <ion-label>F</ion-label>
+                                <ion-radio value="F4"></ion-radio>
+                            </ion-item>
+                        </ion-col>
+                </ion-row>
+            
+          <ion-row class="formulario" radio-group [(ngModel)]="naranja5" align-items-center justify-content: space-around>
+              <ion-col>
+                <ion-item>
+                  <ion-label text-wrap color="dark"><h2 align="justify">Golpeteo con los dedos o no dejo de mover las piernas.</h2></ion-label>
+                </ion-item>
+              </ion-col>
+              <ion-col>
+                  <ion-item>
+                      <ion-label>N</ion-label>
+                      <ion-radio value="N5"></ion-radio>
+                  </ion-item>
+              </ion-col>
+              <ion-col>
+                  <ion-item>
+                      <ion-label>O</ion-label>
+                      <ion-radio value="O5"></ion-radio>
+                  </ion-item>
+              </ion-col>
+              <ion-col>
+                  <ion-item>
+                      <ion-label>F</ion-label>
+                      <ion-radio value="F5"></ion-radio>
+                  </ion-item>
+              </ion-col>
+          </ion-row>
 
-  <ion-list>
-    <ion-grid>
-        <ion-row class="formulario" radio-group align-items-center [(ngModel)]="naranja1" justify-content: space-around>
-            <ion-col>
-                <ion-item>
-                <ion-label text-wrap color="dark"><h2 align="justify">Tengo arranques de ira.</h2></ion-label>
-                </ion-item>
-            </ion-col>
-            <ion-col>
-                <ion-item>
-                    <ion-label>N</ion-label>
-                    <ion-radio value="N1"></ion-radio>
-                </ion-item>
-            </ion-col>
-            <ion-col>
-                <ion-item>
-                    <ion-label>O</ion-label>
-                    <ion-radio value="O1"></ion-radio>
-                </ion-item>
-            </ion-col>
-            <ion-col>
-                <ion-item>
-                    <ion-label>F</ion-label>
-                    <ion-radio value="F1"></ion-radio>
-                </ion-item>
-            </ion-col>
-        </ion-row>
+          <ion-row class="formulario" radio-group [(ngModel)]="naranja6" align-items-center justify-content: space-around>
+                <ion-col>
+                  <ion-item>
+                    <ion-label text-wrap color="dark"><h2 align="justify">Deben recordarme que empiece una tarea o actividad, aunque esté dispuesto(a) a hacerla.</h2></ion-label>
+                  </ion-item>
+                </ion-col>
+                <ion-col>
+                    <ion-item>
+                        <ion-label>N</ion-label>
+                        <ion-radio value="N6"></ion-radio>
+                    </ion-item>
+                </ion-col>
+                <ion-col>
+                    <ion-item>
+                        <ion-label>O</ion-label>
+                        <ion-radio value="O6"></ion-radio>
+                    </ion-item>
+                </ion-col>
+                <ion-col>
+                    <ion-item>
+                        <ion-label>F</ion-label>
+                        <ion-radio value="F6"></ion-radio>
+                    </ion-item>
+                </ion-col>
+            </ion-row>
 
-        <ion-row class="formulario" radio-group [(ngModel)]="naranja5" align-items-center justify-content: space-around>
-            <ion-col>
-              <ion-item>
-                <ion-label text-wrap color="dark"><h2 align="justify">Golpeteo con los dedos o no dejo de mover las piernas.</h2></ion-label>
-              </ion-item>
-            </ion-col>
-            <ion-col>
-                <ion-item>
-                    <ion-label>N</ion-label>
-                    <ion-radio value="N5"></ion-radio>
-                </ion-item>
-            </ion-col>
-            <ion-col>
-                <ion-item>
-                    <ion-label>O</ion-label>
-                    <ion-radio value="O5"></ion-radio>
-                </ion-item>
-            </ion-col>
-            <ion-col>
-                <ion-item>
-                    <ion-label>F</ion-label>
-                    <ion-radio value="F5"></ion-radio>
-                </ion-item>
-            </ion-col>
-        </ion-row>
+            <ion-row class="formulario" radio-group [(ngModel)]="naranja7" align-items-center justify-content: space-around>
+                    <ion-col>
+                      <ion-item>
+                        <ion-label text-wrap color="dark"><h2 align="justify">Mi clóset está desordenado.</h2></ion-label>
+                      </ion-item>
+                    </ion-col>
+                    <ion-col>
+                        <ion-item>
+                            <ion-label>N</ion-label>
+                            <ion-radio value="N7"></ion-radio>
+                        </ion-item>
+                    </ion-col>
+                    <ion-col>
+                        <ion-item>
+                            <ion-label>O</ion-label>
+                            <ion-radio value="O7"></ion-radio>
+                        </ion-item>
+                    </ion-col>
+                    <ion-col>
+                        <ion-item>
+                            <ion-label>F</ion-label>
+                            <ion-radio value="F7"></ion-radio>
+                        </ion-item>
+                    </ion-col>
+            </ion-row>
 
-        <ion-row class="formulario" radio-group [(ngModel)]="naranja16" align-items-center justify-content: space-around>
-            <ion-col>
-              <ion-item>
-                <ion-label text-wrap color="dark"><h2 align="justify">Me es difícil estar quieto(a).</h2></ion-label>
-              </ion-item>
-            </ion-col>
-            <ion-col>
-                <ion-item>
-                    <ion-label>N</ion-label>
-                    <ion-radio value="N16"></ion-radio>
-                </ion-item>
-            </ion-col>
-            <ion-col>
-                <ion-item>
-                    <ion-label>O</ion-label>
-                    <ion-radio value="O16"></ion-radio>
-                </ion-item>
-            </ion-col>
-            <ion-col>
-                <ion-item>
-                    <ion-label>F</ion-label>
-                    <ion-radio value="F16"></ion-radio>
-                </ion-item>
-            </ion-col>
-        </ion-row>
+            <ion-row class="formulario" radio-group [(ngModel)]="naranja8" align-items-center justify-content: space-around>
+                        <ion-col>
+                          <ion-item>
+                            <ion-label text-wrap color="dark"><h2 align="justify">Me es díficil cambiar de una actividad o tarea a otra.</h2></ion-label>
+                          </ion-item>
+                        </ion-col>
+                        <ion-col>
+                            <ion-item>
+                                <ion-label>N</ion-label>
+                                <ion-radio value="N8"></ion-radio>
+                            </ion-item>
+                        </ion-col>
+                        <ion-col>
+                            <ion-item>
+                                <ion-label>O</ion-label>
+                                <ion-radio value="O8"></ion-radio>
+                            </ion-item>
+                        </ion-col>
+                        <ion-col>
+                            <ion-item>
+                                <ion-label>F</ion-label>
+                                <ion-radio value="F8"></ion-radio>
+                            </ion-item>
+                        </ion-col>
+             </ion-row>
 
-        <ion-row class="formulario" radio-group [(ngModel)]="naranja29" align-items-center justify-content: space-around>
-            <ion-col>
-              <ion-item>
-                <ion-label text-wrap color="dark"><h2 align="justify">Me es difícil esperar mi tumo.</h2></ion-label>
-              </ion-item>
-            </ion-col>
-            <ion-col>
-                <ion-item>
-                    <ion-label>N</ion-label>
-                    <ion-radio value="N29"></ion-radio>
-                </ion-item>
-            </ion-col>
-            <ion-col>
-                <ion-item>
-                    <ion-label>O</ion-label>
-                    <ion-radio value="O29"></ion-radio>
-                </ion-item>
-            </ion-col>
-            <ion-col>
-                <ion-item>
-                    <ion-label>F</ion-label>
-                    <ion-radio value="F29"></ion-radio>
-                </ion-item>
-            </ion-col>
-        </ion-row>
+             <ion-row class="formulario" radio-group [(ngModel)]="naranja9" align-items-center justify-content: space-around>
+                    <ion-col>
+                      <ion-item>
+                        <ion-label text-wrap color="dark"><h2 align="justify">Las tareas grandes me abruman.</h2></ion-label>
+                      </ion-item>
+                    </ion-col>
+                    <ion-col>
+                        <ion-item>
+                            <ion-label>N</ion-label>
+                            <ion-radio value="N9"></ion-radio>
+                        </ion-item>
+                    </ion-col>
+                    <ion-col>
+                        <ion-item>
+                            <ion-label>O</ion-label>
+                            <ion-radio value="O9"></ion-radio>
+                        </ion-item>
+                    </ion-col>
+                    <ion-col>
+                        <ion-item>
+                            <ion-label>F</ion-label>
+                            <ion-radio value="F9"></ion-radio>
+                        </ion-item>
+                    </ion-col>
+             </ion-row>
 
-        <ion-row class="formulario" radio-group [(ngModel)]="naranja36" align-items-center justify-content: space-around>
-            <ion-col>
-              <ion-item>
-                <ion-label text-wrap color="dark"><h2 align="justify">Presto atención por poco tiempo.</h2></ion-label>
-              </ion-item>
-            </ion-col>
-            <ion-col>
-                <ion-item>
-                    <ion-label>N</ion-label>
-                    <ion-radio value="N36"></ion-radio>
-                </ion-item>
-            </ion-col>
-            <ion-col>
-                <ion-item>
-                    <ion-label>O</ion-label>
-                    <ion-radio value="O36"></ion-radio>
-                </ion-item>
-            </ion-col>
-            <ion-col>
-                <ion-item>
-                    <ion-label>F</ion-label>
-                    <ion-radio value="F36"></ion-radio>
-                </ion-item>
-            </ion-col>
-        </ion-row>
+             <ion-row class="formulario" radio-group [(ngModel)]="naranja10" align-items-center justify-content: space-around>
+                    <ion-col>
+                      <ion-item>
+                        <ion-label text-wrap color="dark"><h2 align="justify">Se me olvida mi nombre.</h2></ion-label>
+                      </ion-item>
+                    </ion-col>
+                    <ion-col>
+                        <ion-item>
+                            <ion-label>N</ion-label>
+                            <ion-radio value="N10"></ion-radio>
+                        </ion-item>
+                    </ion-col>
+                    <ion-col>
+                        <ion-item>
+                            <ion-label>O</ion-label>
+                            <ion-radio value="O10"></ion-radio>
+                        </ion-item>
+                    </ion-col>
+                    <ion-col>
+                        <ion-item>
+                            <ion-label>F</ion-label>
+                            <ion-radio value="F10"></ion-radio>
+                        </ion-item>
+                    </ion-col>
+             </ion-row>
 
-        <ion-row class="formulario" radio-group [(ngModel)]="naranja43" align-items-center justify-content: space-around>
-            <ion-col>
-              <ion-item>
-                <ion-label text-wrap color="dark"><h2 align="justify">Me molesto con gran facilidad.</h2></ion-label>
-              </ion-item>
-            </ion-col>
-            <ion-col>
-                <ion-item>
-                    <ion-label>N</ion-label>
-                    <ion-radio value="N43"></ion-radio>
-                </ion-item>
-            </ion-col>
-            <ion-col>
-                <ion-item>
-                    <ion-label>O</ion-label>
-                    <ion-radio value="O43"></ion-radio>
-                </ion-item>
-            </ion-col>
-            <ion-col>
-                <ion-item>
-                    <ion-label>F</ion-label>
-                    <ion-radio value="F43"></ion-radio>
-                </ion-item>
-            </ion-col>
-        </ion-row>
+             <ion-row class="formulario" radio-group align-items-center [(ngModel)]="naranja11" justify-content: space-around>
+                    <ion-col>
+                        <ion-item>
+                        <ion-label text-wrap color="dark"><h2 align="justify">Me es difícil hacer trabajos o tareas que tengas varios pasos. </h2></ion-label>
+                        </ion-item>
+                    </ion-col>
+                    <ion-col>
+                        <ion-item>
+                            <ion-label>N</ion-label>
+                            <ion-radio value="N11"></ion-radio>
+                        </ion-item>
+                    </ion-col>
+                    <ion-col>
+                        <ion-item>
+                            <ion-label>O</ion-label>
+                            <ion-radio value="O11"></ion-radio>
+                        </ion-item>
+                    </ion-col>
+                    <ion-col>
+                        <ion-item>
+                            <ion-label>F</ion-label>
+                            <ion-radio value="F11"></ion-radio>
+                        </ion-item>
+                    </ion-col>
+                </ion-row>
+        
+                <ion-row class="formulario" radio-group [(ngModel)]="naranja12" align-items-center justify-content: space-around>
+                      <ion-col>
+                        <ion-item>
+                          <ion-label text-wrap color="dark"><h2 align="justify">Tiendo a exagerar emocionalmente.</h2></ion-label>
+                        </ion-item>
+                      </ion-col>
+                      <ion-col>
+                          <ion-item>
+                              <ion-label>N</ion-label>
+                              <ion-radio value="N12"></ion-radio>
+                          </ion-item>
+                      </ion-col>
+                      <ion-col>
+                          <ion-item>
+                              <ion-label>O</ion-label>
+                              <ion-radio value="O12"></ion-radio>
+                          </ion-item>
+                      </ion-col>
+                      <ion-col>
+                          <ion-item>
+                              <ion-label>F</ion-label>
+                              <ion-radio value="F12"></ion-radio>
+                          </ion-item>
+                      </ion-col>
+                  </ion-row>
+      
+                  <ion-row class="formulario" radio-group [(ngModel)]="naranja13" align-items-center justify-content: space-around>
+                          <ion-col>
+                            <ion-item>
+                              <ion-label text-wrap color="dark"><h2 align="justify">No me doy cuenta de que hago sentir mal a los demás hasta que ya es demasiado tarde.</h2></ion-label>
+                            </ion-item>
+                          </ion-col>
+                          <ion-col>
+                              <ion-item>
+                                  <ion-label>N</ion-label>
+                                  <ion-radio value="N13"></ion-radio>
+                              </ion-item>
+                          </ion-col>
+                          <ion-col>
+                              <ion-item>
+                                  <ion-label>O</ion-label>
+                                  <ion-radio value="O13"></ion-radio>
+                              </ion-item>
+                          </ion-col>
+                          <ion-col>
+                              <ion-item>
+                                  <ion-label>F</ion-label>
+                                  <ion-radio value="F13"></ion-radio>
+                              </ion-item>
+                          </ion-col>
+                      </ion-row>
+      
+                      <ion-row class="formulario" radio-group [(ngModel)]="naranja14" align-items-center justify-content: space-around>
+                              <ion-col>
+                                <ion-item>
+                                  <ion-label text-wrap color="dark"><h2 align="justify">Me es difícil prepararme para el día.</h2></ion-label>
+                                </ion-item>
+                              </ion-col>
+                              <ion-col>
+                                  <ion-item>
+                                      <ion-label>N</ion-label>
+                                      <ion-radio value="N14"></ion-radio>
+                                  </ion-item>
+                              </ion-col>
+                              <ion-col>
+                                  <ion-item>
+                                      <ion-label>O</ion-label>
+                                      <ion-radio value="O14"></ion-radio>
+                                  </ion-item>
+                              </ion-col>
+                              <ion-col>
+                                  <ion-item>
+                                      <ion-label>F</ion-label>
+                                      <ion-radio value="F14"></ion-radio>
+                                  </ion-item>
+                              </ion-col>
+                      </ion-row>
+                  
+                <ion-row class="formulario" radio-group [(ngModel)]="naranja15" align-items-center justify-content: space-around>
+                    <ion-col>
+                      <ion-item>
+                        <ion-label text-wrap color="dark"><h2 align="justify">Me es dfícil decidir el orden de prioridad de mis actividades.</h2></ion-label>
+                      </ion-item>
+                    </ion-col>
+                    <ion-col>
+                        <ion-item>
+                            <ion-label>N</ion-label>
+                            <ion-radio value="N15"></ion-radio>
+                        </ion-item>
+                    </ion-col>
+                    <ion-col>
+                        <ion-item>
+                            <ion-label>O</ion-label>
+                            <ion-radio value="O15"></ion-radio>
+                        </ion-item>
+                    </ion-col>
+                    <ion-col>
+                        <ion-item>
+                            <ion-label>F</ion-label>
+                            <ion-radio value="F15"></ion-radio>
+                        </ion-item>
+                    </ion-col>
+                </ion-row>
+      
+                <ion-row class="formulario" radio-group [(ngModel)]="naranja16" align-items-center justify-content: space-around>
+                        <ion-col>
+                          <ion-item>
+                            <ion-label text-wrap color="dark"><h2 align="justify">Me es difícil estar quieto(a).</h2></ion-label>
+                          </ion-item>
+                        </ion-col>
+                        <ion-col>
+                            <ion-item>
+                                <ion-label>N</ion-label>
+                                <ion-radio value="N16"></ion-radio>
+                            </ion-item>
+                        </ion-col>
+                        <ion-col>
+                            <ion-item>
+                                <ion-label>O</ion-label>
+                                <ion-radio value="O16"></ion-radio>
+                            </ion-item>
+                        </ion-col>
+                        <ion-col>
+                            <ion-item>
+                                <ion-label>F</ion-label>
+                                <ion-radio value="F16"></ion-radio>
+                            </ion-item>
+                        </ion-col>
+                    </ion-row>
+            
+      
+                  <ion-row class="formulario" radio-group [(ngModel)]="naranja17" align-items-center justify-content: space-around>
+                          <ion-col>
+                            <ion-item>
+                              <ion-label text-wrap color="dark"><h2 align="justify">Se me olvida lo que estoy haciendo a la mitad de las cosas. </h2></ion-label>
+                            </ion-item>
+                          </ion-col>
+                          <ion-col>
+                              <ion-item>
+                                  <ion-label>N</ion-label>
+                                  <ion-radio value="N17"></ion-radio>
+                              </ion-item>
+                          </ion-col>
+                          <ion-col>
+                              <ion-item>
+                                  <ion-label>O</ion-label>
+                                  <ion-radio value="O17"></ion-radio>
+                              </ion-item>
+                          </ion-col>
+                          <ion-col>
+                              <ion-item>
+                                  <ion-label>F</ion-label>
+                                  <ion-radio value="F17"></ion-radio>
+                              </ion-item>
+                          </ion-col>
+                  </ion-row>
+      
+                  <ion-row class="formulario" radio-group [(ngModel)]="naranja18" align-items-center justify-content: space-around>
+                              <ion-col>
+                                <ion-item>
+                                  <ion-label text-wrap color="dark"><h2 align="justify">No compruebo mi trabajo para detectar si hay errores.</h2></ion-label>
+                                </ion-item>
+                              </ion-col>
+                              <ion-col>
+                                  <ion-item>
+                                      <ion-label>N</ion-label>
+                                      <ion-radio value="N18"></ion-radio>
+                                  </ion-item>
+                              </ion-col>
+                              <ion-col>
+                                  <ion-item>
+                                      <ion-label>O</ion-label>
+                                      <ion-radio value="O18"></ion-radio>
+                                  </ion-item>
+                              </ion-col>
+                              <ion-col>
+                                  <ion-item>
+                                      <ion-label>F</ion-label>
+                                      <ion-radio value="F18"></ion-radio>
+                                  </ion-item>
+                              </ion-col>
+                   </ion-row>
+      
+                   <ion-row class="formulario" radio-group [(ngModel)]="naranja19" align-items-center justify-content: space-around>
+                          <ion-col>
+                            <ion-item>
+                              <ion-label text-wrap color="dark"><h2 align="justify">Tengo arranques emcoionales por pequeñeces.</h2></ion-label>
+                            </ion-item>
+                          </ion-col>
+                          <ion-col>
+                              <ion-item>
+                                  <ion-label>N</ion-label>
+                                  <ion-radio value="N19"></ion-radio>
+                              </ion-item>
+                          </ion-col>
+                          <ion-col>
+                              <ion-item>
+                                  <ion-label>O</ion-label>
+                                  <ion-radio value="O19"></ion-radio>
+                              </ion-item>
+                          </ion-col>
+                          <ion-col>
+                              <ion-item>
+                                  <ion-label>F</ion-label>
+                                  <ion-radio value="F19"></ion-radio>
+                              </ion-item>
+                          </ion-col>
+                   </ion-row>
+      
+                   <ion-row class="formulario" radio-group [(ngModel)]="naranja20" align-items-center justify-content: space-around>
+                          <ion-col>
+                            <ion-item>
+                              <ion-label text-wrap color="dark"><h2 align="justify">Paso mucho tiempo en la casa echado(a) sin hcer nada.</h2></ion-label>
+                            </ion-item>
+                          </ion-col>
+                          <ion-col>
+                              <ion-item>
+                                  <ion-label>N</ion-label>
+                                  <ion-radio value="N20"></ion-radio>
+                              </ion-item>
+                          </ion-col>
+                          <ion-col>
+                              <ion-item>
+                                  <ion-label>O</ion-label>
+                                  <ion-radio value="O20"></ion-radio>
+                              </ion-item>
+                          </ion-col>
+                          <ion-col>
+                              <ion-item>
+                                  <ion-label>F</ion-label>
+                                  <ion-radio value="F20"></ion-radio>
+                              </ion-item>
+                          </ion-col>
+                   </ion-row>
 
-      </ion-grid>
-  </ion-list>
-  {{Inhibicion}}
+                   <ion-row class="formulario" radio-group align-items-center [(ngModel)]="naranja21" justify-content: space-around>
+                        <ion-col>
+                            <ion-item>
+                            <ion-label text-wrap color="dark"><h2 align="justify">Empiezo tareas o actividades (por ejemplo, una receta de cocina) sin contar con los materiales necesario.</h2></ion-label>
+                            </ion-item>
+                        </ion-col>
+                        <ion-col>
+                            <ion-item>
+                                <ion-label>N</ion-label>
+                                <ion-radio value="N21"></ion-radio>
+                            </ion-item>
+                        </ion-col>
+                        <ion-col>
+                            <ion-item>
+                                <ion-label>O</ion-label>
+                                <ion-radio value="O21"></ion-radio>
+                            </ion-item>
+                        </ion-col>
+                        <ion-col>
+                            <ion-item>
+                                <ion-label>F</ion-label>
+                                <ion-radio value="F21"></ion-radio>
+                            </ion-item>
+                        </ion-col>
+                    </ion-row>
+            
+                    <ion-row class="formulario" radio-group [(ngModel)]="naranja22" align-items-center justify-content: space-around>
+                          <ion-col>
+                            <ion-item>
+                              <ion-label text-wrap color="dark"><h2 align="justify">Me es difícil aceptar otros métodos para solucionar problemas de trabajo, los amigos o las tareas.</h2></ion-label>
+                            </ion-item>
+                          </ion-col>
+                          <ion-col>
+                              <ion-item>
+                                  <ion-label>N</ion-label>
+                                  <ion-radio value="N22"></ion-radio>
+                              </ion-item>
+                          </ion-col>
+                          <ion-col>
+                              <ion-item>
+                                  <ion-label>O</ion-label>
+                                  <ion-radio value="O22"></ion-radio>
+                              </ion-item>
+                          </ion-col>
+                          <ion-col>
+                              <ion-item>
+                                  <ion-label>F</ion-label>
+                                  <ion-radio value="F22"></ion-radio>
+                              </ion-item>
+                          </ion-col>
+                      </ion-row>
+          
+                      <ion-row class="formulario" radio-group [(ngModel)]="naranja23" align-items-center justify-content: space-around>
+                              <ion-col>
+                                <ion-item>
+                                  <ion-label text-wrap color="dark"><h2 align="justify">Hablo en el momento menos oportuno.</h2></ion-label>
+                                </ion-item>
+                              </ion-col>
+                              <ion-col>
+                                  <ion-item>
+                                      <ion-label>N</ion-label>
+                                      <ion-radio value="N23"></ion-radio>
+                                  </ion-item>
+                              </ion-col>
+                              <ion-col>
+                                  <ion-item>
+                                      <ion-label>O</ion-label>
+                                      <ion-radio value="O23"></ion-radio>
+                                  </ion-item>
+                              </ion-col>
+                              <ion-col>
+                                  <ion-item>
+                                      <ion-label>F</ion-label>
+                                      <ion-radio value="F23"></ion-radio>
+                                  </ion-item>
+                              </ion-col>
+                          </ion-row>
+          
+                          <ion-row class="formulario" radio-group [(ngModel)]="naranja24" align-items-center justify-content: space-around>
+                                  <ion-col>
+                                    <ion-item>
+                                      <ion-label text-wrap color="dark"><h2 align="justify">Me es difícil reconocer la dificultad de las tareas.</h2></ion-label>
+                                    </ion-item>
+                                  </ion-col>
+                                  <ion-col>
+                                      <ion-item>
+                                          <ion-label>N</ion-label>
+                                          <ion-radio value="N24"></ion-radio>
+                                      </ion-item>
+                                  </ion-col>
+                                  <ion-col>
+                                      <ion-item>
+                                          <ion-label>O</ion-label>
+                                          <ion-radio value="O24"></ion-radio>
+                                      </ion-item>
+                                  </ion-col>
+                                  <ion-col>
+                                      <ion-item>
+                                          <ion-label>F</ion-label>
+                                          <ion-radio value="F24"></ion-radio>
+                                      </ion-item>
+                                  </ion-col>
+                          </ion-row>
+                      
+                    <ion-row class="formulario" radio-group [(ngModel)]="naranja25" align-items-center justify-content: space-around>
+                        <ion-col>
+                          <ion-item>
+                            <ion-label text-wrap color="dark"><h2 align="justify">Me es difícil comenzar a hacer algo yo solo(a).</h2></ion-label>
+                          </ion-item>
+                        </ion-col>
+                        <ion-col>
+                            <ion-item>
+                                <ion-label>N</ion-label>
+                                <ion-radio value="N25"></ion-radio>
+                            </ion-item>
+                        </ion-col>
+                        <ion-col>
+                            <ion-item>
+                                <ion-label>O</ion-label>
+                                <ion-radio value="O25"></ion-radio>
+                            </ion-item>
+                        </ion-col>
+                        <ion-col>
+                            <ion-item>
+                                <ion-label>F</ion-label>
+                                <ion-radio value="F25"></ion-radio>
+                            </ion-item>
+                        </ion-col>
+                    </ion-row>
+          
+                    <ion-row class="formulario" radio-group [(ngModel)]="naranja26" align-items-center justify-content: space-around>
+                            <ion-col>
+                              <ion-item>
+                                <ion-label text-wrap color="dark"><h2 align="justify">Me es difícil no cambiar el tema cuando yo hablo.</h2></ion-label>
+                              </ion-item>
+                            </ion-col>
+                            <ion-col>
+                                <ion-item>
+                                    <ion-label>N</ion-label>
+                                    <ion-radio value="N26"></ion-radio>
+                                </ion-item>
+                            </ion-col>
+                            <ion-col>
+                                <ion-item>
+                                    <ion-label>O</ion-label>
+                                    <ion-radio value="O26"></ion-radio>
+                                </ion-item>
+                            </ion-col>
+                            <ion-col>
+                                <ion-item>
+                                    <ion-label>F</ion-label>
+                                    <ion-radio value="F26"></ion-radio>
+                                </ion-item>
+                            </ion-col>
+                        </ion-row>
+                
+          
+                      <ion-row class="formulario" radio-group [(ngModel)]="naranja27" align-items-center justify-content: space-around>
+                              <ion-col>
+                                <ion-item>
+                                  <ion-label text-wrap color="dark"><h2 align="justify">Me canso con facilidad.</h2></ion-label>
+                                </ion-item>
+                              </ion-col>
+                              <ion-col>
+                                  <ion-item>
+                                      <ion-label>N</ion-label>
+                                      <ion-radio value="N27"></ion-radio>
+                                  </ion-item>
+                              </ion-col>
+                              <ion-col>
+                                  <ion-item>
+                                      <ion-label>O</ion-label>
+                                      <ion-radio value="O27"></ion-radio>
+                                  </ion-item>
+                              </ion-col>
+                              <ion-col>
+                                  <ion-item>
+                                      <ion-label>F</ion-label>
+                                      <ion-radio value="F27"></ion-radio>
+                                  </ion-item>
+                              </ion-col>
+                      </ion-row>
+          
+                      <ion-row class="formulario" radio-group [(ngModel)]="naranja28" align-items-center justify-content: space-around>
+                                  <ion-col>
+                                    <ion-item>
+                                      <ion-label text-wrap color="dark"><h2 align="justify">Reacciono ante las situaciones de manera más emotiva que mis amigos.</h2></ion-label>
+                                    </ion-item>
+                                  </ion-col>
+                                  <ion-col>
+                                      <ion-item>
+                                          <ion-label>N</ion-label>
+                                          <ion-radio value="N28"></ion-radio>
+                                      </ion-item>
+                                  </ion-col>
+                                  <ion-col>
+                                      <ion-item>
+                                          <ion-label>O</ion-label>
+                                          <ion-radio value="O28"></ion-radio>
+                                      </ion-item>
+                                  </ion-col>
+                                  <ion-col>
+                                      <ion-item>
+                                          <ion-label>F</ion-label>
+                                          <ion-radio value="F28"></ion-radio>
+                                      </ion-item>
+                                  </ion-col>
+                       </ion-row>
+          
+                       <ion-row class="formulario" radio-group [(ngModel)]="naranja29" align-items-center justify-content: space-around>
+                            <ion-col>
+                              <ion-item>
+                                <ion-label text-wrap color="dark"><h2 align="justify">Me es difícil esperar mi tumo.</h2></ion-label>
+                              </ion-item>
+                            </ion-col>
+                            <ion-col>
+                                <ion-item>
+                                    <ion-label>N</ion-label>
+                                    <ion-radio value="N29"></ion-radio>
+                                </ion-item>
+                            </ion-col>
+                            <ion-col>
+                                <ion-item>
+                                    <ion-label>O</ion-label>
+                                    <ion-radio value="O29"></ion-radio>
+                                </ion-item>
+                            </ion-col>
+                            <ion-col>
+                                <ion-item>
+                                    <ion-label>F</ion-label>
+                                    <ion-radio value="F29"></ion-radio>
+                                </ion-item>
+                            </ion-col>
+                        </ion-row>
+          
+                       <ion-row class="formulario" radio-group [(ngModel)]="naranja30" align-items-center justify-content: space-around>
+                              <ion-col>
+                                <ion-item>
+                                  <ion-label text-wrap color="dark"><h2 align="justify">Los demás piensan que soy desorganizado(a).</h2></ion-label>
+                                </ion-item>
+                              </ion-col>
+                              <ion-col>
+                                  <ion-item>
+                                      <ion-label>N</ion-label>
+                                      <ion-radio value="N30"></ion-radio>
+                                  </ion-item>
+                              </ion-col>
+                              <ion-col>
+                                  <ion-item>
+                                      <ion-label>O</ion-label>
+                                      <ion-radio value="O30"></ion-radio>
+                                  </ion-item>
+                              </ion-col>
+                              <ion-col>
+                                  <ion-item>
+                                      <ion-label>F</ion-label>
+                                      <ion-radio value="F30"></ion-radio>
+                                  </ion-item>
+                              </ion-col>
+                       </ion-row>
 
-</ion-content>
+                       <ion-row class="formulario" radio-group align-items-center [(ngModel)]="naranja31" justify-content: space-around>
+                            <ion-col>
+                                <ion-item>
+                                <ion-label text-wrap color="dark"><h2 align="justify">Pierdo las cosas (las llaves, el dinero, la cartera, el celular, etc.).</h2></ion-label>
+                                </ion-item>
+                            </ion-col>
+                            <ion-col>
+                                <ion-item>
+                                    <ion-label>N</ion-label>
+                                    <ion-radio value="N31"></ion-radio>
+                                </ion-item>
+                            </ion-col>
+                            <ion-col>
+                                <ion-item>
+                                    <ion-label>O</ion-label>
+                                    <ion-radio value="O31"></ion-radio>
+                                </ion-item>
+                            </ion-col>
+                            <ion-col>
+                                <ion-item>
+                                    <ion-label>F</ion-label>
+                                    <ion-radio value="F31"></ion-radio>
+                                </ion-item>
+                            </ion-col>
+                        </ion-row>
+                
+                        <ion-row class="formulario" radio-group [(ngModel)]="naranja32" align-items-center justify-content: space-around>
+                              <ion-col>
+                                <ion-item>
+                                  <ion-label text-wrap color="dark"><h2 align="justify">Tengo dificultades para pensar diferente si he quedado bloqueado frente a un problema.</h2></ion-label>
+                                </ion-item>
+                              </ion-col>
+                              <ion-col>
+                                  <ion-item>
+                                      <ion-label>N</ion-label>
+                                      <ion-radio value="N32"></ion-radio>
+                                  </ion-item>
+                              </ion-col>
+                              <ion-col>
+                                  <ion-item>
+                                      <ion-label>O</ion-label>
+                                      <ion-radio value="O32"></ion-radio>
+                                  </ion-item>
+                              </ion-col>
+                              <ion-col>
+                                  <ion-item>
+                                      <ion-label>F</ion-label>
+                                      <ion-radio value="F32"></ion-radio>
+                                  </ion-item>
+                              </ion-col>
+                          </ion-row>
+              
+                          <ion-row class="formulario" radio-group [(ngModel)]="naranja33" align-items-center justify-content: space-around>
+                                  <ion-col>
+                                    <ion-item>
+                                      <ion-label text-wrap color="dark"><h2 align="justify">Tiendo a exagerar ante problemas pequeños.</h2></ion-label>
+                                    </ion-item>
+                                  </ion-col>
+                                  <ion-col>
+                                      <ion-item>
+                                          <ion-label>N</ion-label>
+                                          <ion-radio value="N33"></ion-radio>
+                                      </ion-item>
+                                  </ion-col>
+                                  <ion-col>
+                                      <ion-item>
+                                          <ion-label>O</ion-label>
+                                          <ion-radio value="O33"></ion-radio>
+                                      </ion-item>
+                                  </ion-col>
+                                  <ion-col>
+                                      <ion-item>
+                                          <ion-label>F</ion-label>
+                                          <ion-radio value="F33"></ion-radio>
+                                      </ion-item>
+                                  </ion-col>
+                              </ion-row>
+              
+                              <ion-row class="formulario" radio-group [(ngModel)]="naranja34" align-items-center justify-content: space-around>
+                                      <ion-col>
+                                        <ion-item>
+                                          <ion-label text-wrap color="dark"><h2 align="justify">No planeo con anticipación mis actividades.</h2></ion-label>
+                                        </ion-item>
+                                      </ion-col>
+                                      <ion-col>
+                                          <ion-item>
+                                              <ion-label>N</ion-label>
+                                              <ion-radio value="N34"></ion-radio>
+                                          </ion-item>
+                                      </ion-col>
+                                      <ion-col>
+                                          <ion-item>
+                                              <ion-label>O</ion-label>
+                                              <ion-radio value="O34"></ion-radio>
+                                          </ion-item>
+                                      </ion-col>
+                                      <ion-col>
+                                          <ion-item>
+                                              <ion-label>F</ion-label>
+                                              <ion-radio value="F34"></ion-radio>
+                                          </ion-item>
+                                      </ion-col>
+                              </ion-row>
+                          
+                        <ion-row class="formulario" radio-group [(ngModel)]="naranja35" align-items-center justify-content: space-around>
+                            <ion-col>
+                              <ion-item>
+                                <ion-label text-wrap color="dark"><h2 align="justify">Presto atención por poco tiempo.</h2></ion-label>
+                              </ion-item>
+                            </ion-col>
+                            <ion-col>
+                                <ion-item>
+                                    <ion-label>N</ion-label>
+                                    <ion-radio value="N35"></ion-radio>
+                                </ion-item>
+                            </ion-col>
+                            <ion-col>
+                                <ion-item>
+                                    <ion-label>O</ion-label>
+                                    <ion-radio value="O35"></ion-radio>
+                                </ion-item>
+                            </ion-col>
+                            <ion-col>
+                                <ion-item>
+                                    <ion-label>F</ion-label>
+                                    <ion-radio value="F35"></ion-radio>
+                                </ion-item>
+                            </ion-col>
+                        </ion-row>
+              
+                        <ion-row class="formulario" radio-group [(ngModel)]="naranja36" align-items-center justify-content: space-around>
+                              <ion-col>
+                                <ion-item>
+                                  <ion-label text-wrap color="dark"><h2 align="justify">Hago comentarios sexuales inapropiados.</h2></ion-label>
+                                </ion-item>
+                              </ion-col>
+                              <ion-col>
+                                  <ion-item>
+                                      <ion-label>N</ion-label>
+                                      <ion-radio value="N36"></ion-radio>
+                                  </ion-item>
+                              </ion-col>
+                              <ion-col>
+                                  <ion-item>
+                                      <ion-label>O</ion-label>
+                                      <ion-radio value="O36"></ion-radio>
+                                  </ion-item>
+                              </ion-col>
+                              <ion-col>
+                                  <ion-item>
+                                      <ion-label>F</ion-label>
+                                      <ion-radio value="F36"></ion-radio>
+                                  </ion-item>
+                              </ion-col>
+                          </ion-row>
+              
+                          <ion-row class="formulario" radio-group [(ngModel)]="naranja37" align-items-center justify-content: space-around>
+                                  <ion-col>
+                                    <ion-item>
+                                      <ion-label text-wrap color="dark"><h2 align="justify">No entiendo porque las personas parecen molestarse conmigo.</h2></ion-label>
+                                    </ion-item>
+                                  </ion-col>
+                                  <ion-col>
+                                      <ion-item>
+                                          <ion-label>N</ion-label>
+                                          <ion-radio value="N37"></ion-radio>
+                                      </ion-item>
+                                  </ion-col>
+                                  <ion-col>
+                                      <ion-item>
+                                          <ion-label>O</ion-label>
+                                          <ion-radio value="O37"></ion-radio>
+                                      </ion-item>
+                                  </ion-col>
+                                  <ion-col>
+                                      <ion-item>
+                                          <ion-label>F</ion-label>
+                                          <ion-radio value="F37"></ion-radio>
+                                      </ion-item>
+                                  </ion-col>
+                          </ion-row>
+              
+                          <ion-row class="formulario" radio-group [(ngModel)]="naranja38" align-items-center justify-content: space-around>
+                                      <ion-col>
+                                        <ion-item>
+                                          <ion-label text-wrap color="dark"><h2 align="justify">No tengo paciencia.</h2></ion-label>
+                                        </ion-item>
+                                      </ion-col>
+                                      <ion-col>
+                                          <ion-item>
+                                              <ion-label>N</ion-label>
+                                              <ion-radio value="N38"></ion-radio>
+                                          </ion-item>
+                                      </ion-col>
+                                      <ion-col>
+                                          <ion-item>
+                                              <ion-label>O</ion-label>
+                                              <ion-radio value="O38"></ion-radio>
+                                          </ion-item>
+                                      </ion-col>
+                                      <ion-col>
+                                          <ion-item>
+                                              <ion-label>F</ion-label>
+                                              <ion-radio value="F38"></ion-radio>
+                                          </ion-item>
+                                      </ion-col>
+                           </ion-row>
+              
+                           <ion-row class="formulario" radio-group [(ngModel)]="naranja39" align-items-center justify-content: space-around>
+                                  <ion-col>
+                                    <ion-item>
+                                      <ion-label text-wrap color="dark"><h2 align="justify">Tengo objetivos poco realistas.</h2></ion-label>
+                                    </ion-item>
+                                  </ion-col>
+                                  <ion-col>
+                                      <ion-item>
+                                          <ion-label>N</ion-label>
+                                          <ion-radio value="N39"></ion-radio>
+                                      </ion-item>
+                                  </ion-col>
+                                  <ion-col>
+                                      <ion-item>
+                                          <ion-label>O</ion-label>
+                                          <ion-radio value="O39"></ion-radio>
+                                      </ion-item>
+                                  </ion-col>
+                                  <ion-col>
+                                      <ion-item>
+                                          <ion-label>F</ion-label>
+                                          <ion-radio value="F39"></ion-radio>
+                                      </ion-item>
+                                  </ion-col>
+                           </ion-row>
+              
+                           <ion-row class="formulario" radio-group [(ngModel)]="naranja40" align-items-center justify-content: space-around>
+                                  <ion-col>
+                                    <ion-item>
+                                      <ion-label text-wrap color="dark"><h2 align="justify">El baño queda desordenado cuando yo lo ocupo.</h2></ion-label>
+                                    </ion-item>
+                                  </ion-col>
+                                  <ion-col>
+                                      <ion-item>
+                                          <ion-label>N</ion-label>
+                                          <ion-radio value="N40"></ion-radio>
+                                      </ion-item>
+                                  </ion-col>
+                                  <ion-col>
+                                      <ion-item>
+                                          <ion-label>O</ion-label>
+                                          <ion-radio value="O40"></ion-radio>
+                                      </ion-item>
+                                  </ion-col>
+                                  <ion-col>
+                                      <ion-item>
+                                          <ion-label>F</ion-label>
+                                          <ion-radio value="F40"></ion-radio>
+                                      </ion-item>
+                                  </ion-col>
+                           </ion-row>
+
+                           <ion-row class="formulario" radio-group align-items-center [(ngModel)]="naranja41" justify-content: space-around>
+                                <ion-col>
+                                    <ion-item>
+                                    <ion-label text-wrap color="dark"><h2 align="justify">Cometo errores simples.</h2></ion-label>
+                                    </ion-item>
+                                </ion-col>
+                                <ion-col>
+                                    <ion-item>
+                                        <ion-label>N</ion-label>
+                                        <ion-radio value="N41"></ion-radio>
+                                    </ion-item>
+                                </ion-col>
+                                <ion-col>
+                                    <ion-item>
+                                        <ion-label>O</ion-label>
+                                        <ion-radio value="O41"></ion-radio>
+                                    </ion-item>
+                                </ion-col>
+                                <ion-col>
+                                    <ion-item>
+                                        <ion-label>F</ion-label>
+                                        <ion-radio value="F41"></ion-radio>
+                                    </ion-item>
+                                </ion-col>
+                            </ion-row>
+                    
+                            <ion-row class="formulario" radio-group [(ngModel)]="naranja42" align-items-center justify-content: space-around>
+                                  <ion-col>
+                                    <ion-item>
+                                      <ion-label text-wrap color="dark"><h2 align="justify">Me molesto con gran facilidad.</h2></ion-label>
+                                    </ion-item>
+                                  </ion-col>
+                                  <ion-col>
+                                      <ion-item>
+                                          <ion-label>N</ion-label>
+                                          <ion-radio value="N42"></ion-radio>
+                                      </ion-item>
+                                  </ion-col>
+                                  <ion-col>
+                                      <ion-item>
+                                          <ion-label>O</ion-label>
+                                          <ion-radio value="O42"></ion-radio>
+                                      </ion-item>
+                                  </ion-col>
+                                  <ion-col>
+                                      <ion-item>
+                                          <ion-label>F</ion-label>
+                                          <ion-radio value="F42"></ion-radio>
+                                      </ion-item>
+                                  </ion-col>
+                              </ion-row>
+                  
+                              <ion-row class="formulario" radio-group [(ngModel)]="naranja43" align-items-center justify-content: space-around>
+                                      <ion-col>
+                                        <ion-item>
+                                          <ion-label text-wrap color="dark"><h2 align="justify">Las decisiones que tomo me  causan problemas (sociales, familiares, legales, financieros, etc.).</h2></ion-label>
+                                        </ion-item>
+                                      </ion-col>
+                                      <ion-col>
+                                          <ion-item>
+                                              <ion-label>N</ion-label>
+                                              <ion-radio value="N43"></ion-radio>
+                                          </ion-item>
+                                      </ion-col>
+                                      <ion-col>
+                                          <ion-item>
+                                              <ion-label>O</ion-label>
+                                              <ion-radio value="O43"></ion-radio>
+                                          </ion-item>
+                                      </ion-col>
+                                      <ion-col>
+                                          <ion-item>
+                                              <ion-label>F</ion-label>
+                                              <ion-radio value="F43"></ion-radio>
+                                          </ion-item>
+                                      </ion-col>
+                                  </ion-row>
+                  
+                                  <ion-row class="formulario" radio-group [(ngModel)]="naranja44" align-items-center justify-content: space-around>
+                                          <ion-col>
+                                            <ion-item>
+                                              <ion-label text-wrap color="dark"><h2 align="justify">No me gusta enfrentar cambios.</h2></ion-label>
+                                            </ion-item>
+                                          </ion-col>
+                                          <ion-col>
+                                              <ion-item>
+                                                  <ion-label>N</ion-label>
+                                                  <ion-radio value="N44"></ion-radio>
+                                              </ion-item>
+                                          </ion-col>
+                                          <ion-col>
+                                              <ion-item>
+                                                  <ion-label>O</ion-label>
+                                                  <ion-radio value="O44"></ion-radio>
+                                              </ion-item>
+                                          </ion-col>
+                                          <ion-col>
+                                              <ion-item>
+                                                  <ion-label>F</ion-label>
+                                                  <ion-radio value="F44"></ion-radio>
+                                              </ion-item>
+                                          </ion-col>
+                                  </ion-row>
+                              
+                            <ion-row class="formulario" radio-group [(ngModel)]="naranja45" align-items-center justify-content: space-around>
+                                <ion-col>
+                                  <ion-item>
+                                    <ion-label text-wrap color="dark"><h2 align="justify">Me es difícil emocionarme con las cosas.</h2></ion-label>
+                                  </ion-item>
+                                </ion-col>
+                                <ion-col>
+                                    <ion-item>
+                                        <ion-label>N</ion-label>
+                                        <ion-radio value="N45"></ion-radio>
+                                    </ion-item>
+                                </ion-col>
+                                <ion-col>
+                                    <ion-item>
+                                        <ion-label>O</ion-label>
+                                        <ion-radio value="O45"></ion-radio>
+                                    </ion-item>
+                                </ion-col>
+                                <ion-col>
+                                    <ion-item>
+                                        <ion-label>F</ion-label>
+                                        <ion-radio value="F45"></ion-radio>
+                                    </ion-item>
+                                </ion-col>
+                            </ion-row>
+                  
+                            <ion-row class="formulario" radio-group [(ngModel)]="naranja46" align-items-center justify-content: space-around>
+                                  <ion-col>
+                                    <ion-item>
+                                      <ion-label text-wrap color="dark"><h2 align="justify">Me es difícil recordar instrucciones.</h2></ion-label>
+                                    </ion-item>
+                                  </ion-col>
+                                  <ion-col>
+                                      <ion-item>
+                                          <ion-label>N</ion-label>
+                                          <ion-radio value="N46"></ion-radio>
+                                      </ion-item>
+                                  </ion-col>
+                                  <ion-col>
+                                      <ion-item>
+                                          <ion-label>O</ion-label>
+                                          <ion-radio value="O46"></ion-radio>
+                                      </ion-item>
+                                  </ion-col>
+                                  <ion-col>
+                                      <ion-item>
+                                          <ion-label>F</ion-label>
+                                          <ion-radio value="F46"></ion-radio>
+                                      </ion-item>
+                                  </ion-col>
+                              </ion-row>
+                  
+                              <ion-row class="formulario" radio-group [(ngModel)]="naranja47" align-items-center justify-content: space-around>
+                                      <ion-col>
+                                        <ion-item>
+                                          <ion-label text-wrap color="dark"><h2 align="justify">Mis ideas son buenas, pero no logro llevarlas al papel.</h2></ion-label>
+                                        </ion-item>
+                                      </ion-col>
+                                      <ion-col>
+                                          <ion-item>
+                                              <ion-label>N</ion-label>
+                                              <ion-radio value="N47"></ion-radio>
+                                          </ion-item>
+                                      </ion-col>
+                                      <ion-col>
+                                          <ion-item>
+                                              <ion-label>O</ion-label>
+                                              <ion-radio value="O47"></ion-radio>
+                                          </ion-item>
+                                      </ion-col>
+                                      <ion-col>
+                                          <ion-item>
+                                              <ion-label>F</ion-label>
+                                              <ion-radio value="F47"></ion-radio>
+                                          </ion-item>
+                                      </ion-col>
+                              </ion-row>
+                  
+                              <ion-row class="formulario" radio-group [(ngModel)]="naranja48" align-items-center justify-content: space-around>
+                                          <ion-col>
+                                            <ion-item>
+                                              <ion-label text-wrap color="dark"><h2 align="justify">Cometo errores.</h2></ion-label>
+                                            </ion-item>
+                                          </ion-col>
+                                          <ion-col>
+                                              <ion-item>
+                                                  <ion-label>N</ion-label>
+                                                  <ion-radio value="N48"></ion-radio>
+                                              </ion-item>
+                                          </ion-col>
+                                          <ion-col>
+                                              <ion-item>
+                                                  <ion-label>O</ion-label>
+                                                  <ion-radio value="O48"></ion-radio>
+                                              </ion-item>
+                                          </ion-col>
+                                          <ion-col>
+                                              <ion-item>
+                                                  <ion-label>F</ion-label>
+                                                  <ion-radio value="F48"></ion-radio>
+                                              </ion-item>
+                                          </ion-col>
+                               </ion-row>
+                  
+                               <ion-row class="formulario" radio-group [(ngModel)]="naranja49" align-items-center justify-content: space-around>
+                                      <ion-col>
+                                        <ion-item>
+                                          <ion-label text-wrap color="dark"><h2 align="justify">Me es difícil empezar una tarea.</h2></ion-label>
+                                        </ion-item>
+                                      </ion-col>
+                                      <ion-col>
+                                          <ion-item>
+                                              <ion-label>N</ion-label>
+                                              <ion-radio value="N49"></ion-radio>
+                                          </ion-item>
+                                      </ion-col>
+                                      <ion-col>
+                                          <ion-item>
+                                              <ion-label>O</ion-label>
+                                              <ion-radio value="O49"></ion-radio>
+                                          </ion-item>
+                                      </ion-col>
+                                      <ion-col>
+                                          <ion-item>
+                                              <ion-label>F</ion-label>
+                                              <ion-radio value="F49"></ion-radio>
+                                          </ion-item>
+                                      </ion-col>
+                               </ion-row>
+                  
+                               <ion-row class="formulario" radio-group [(ngModel)]="naranja50" align-items-center justify-content: space-around>
+                                      <ion-col>
+                                        <ion-item>
+                                          <ion-label text-wrap color="dark"><h2 align="justify">No pienso antes de hablar.</h2></ion-label>
+                                        </ion-item>
+                                      </ion-col>
+                                      <ion-col>
+                                          <ion-item>
+                                              <ion-label>N</ion-label>
+                                              <ion-radio value="N50"></ion-radio>
+                                          </ion-item>
+                                      </ion-col>
+                                      <ion-col>
+                                          <ion-item>
+                                              <ion-label>O</ion-label>
+                                              <ion-radio value="O50"></ion-radio>
+                                          </ion-item>
+                                      </ion-col>
+                                      <ion-col>
+                                          <ion-item>
+                                              <ion-label>F</ion-label>
+                                              <ion-radio value="F50"></ion-radio>
+                                          </ion-item>
+                                      </ion-col>
+                               </ion-row>
+
+                               <ion-row class="formulario" radio-group align-items-center [(ngModel)]="naranja51" justify-content: space-around>
+                                    <ion-col>
+                                        <ion-item>
+                                        <ion-label text-wrap color="dark"><h2 align="justify">Mi enojo es intenso, pero desaparece con rapidez.</h2></ion-label>
+                                        </ion-item>
+                                    </ion-col>
+                                    <ion-col>
+                                        <ion-item>
+                                            <ion-label>N</ion-label>
+                                            <ion-radio value="N51"></ion-radio>
+                                        </ion-item>
+                                    </ion-col>
+                                    <ion-col>
+                                        <ion-item>
+                                            <ion-label>O</ion-label>
+                                            <ion-radio value="O51"></ion-radio>
+                                        </ion-item>
+                                    </ion-col>
+                                    <ion-col>
+                                        <ion-item>
+                                            <ion-label>F</ion-label>
+                                            <ion-radio value="F51"></ion-radio>
+                                        </ion-item>
+                                    </ion-col>
+                                </ion-row>
+                        
+                                <ion-row class="formulario" radio-group [(ngModel)]="naranja52" align-items-center justify-content: space-around>
+                                      <ion-col>
+                                        <ion-item>
+                                          <ion-label text-wrap color="dark"><h2 align="justify">Me es difícil terminar las tareas (por ejemplo, labores domésticas, escuela, trabajo).</h2></ion-label>
+                                        </ion-item>
+                                      </ion-col>
+                                      <ion-col>
+                                          <ion-item>
+                                              <ion-label>N</ion-label>
+                                              <ion-radio value="N52"></ion-radio>
+                                          </ion-item>
+                                      </ion-col>
+                                      <ion-col>
+                                          <ion-item>
+                                              <ion-label>O</ion-label>
+                                              <ion-radio value="O52"></ion-radio>
+                                          </ion-item>
+                                      </ion-col>
+                                      <ion-col>
+                                          <ion-item>
+                                              <ion-label>F</ion-label>
+                                              <ion-radio value="F52"></ion-radio>
+                                          </ion-item>
+                                      </ion-col>
+                                  </ion-row>
+                      
+                                  <ion-row class="formulario" radio-group [(ngModel)]="naranja53" align-items-center justify-content: space-around>
+                                          <ion-col>
+                                            <ion-item>
+                                              <ion-label text-wrap color="dark"><h2 align="justify">Empiezo mis actividades en el último minuto (por ejemplo, asignaciones, labores domésticas, tareas).</h2></ion-label>
+                                            </ion-item>
+                                          </ion-col>
+                                          <ion-col>
+                                              <ion-item>
+                                                  <ion-label>N</ion-label>
+                                                  <ion-radio value="N53"></ion-radio>
+                                              </ion-item>
+                                          </ion-col>
+                                          <ion-col>
+                                              <ion-item>
+                                                  <ion-label>O</ion-label>
+                                                  <ion-radio value="O53"></ion-radio>
+                                              </ion-item>
+                                          </ion-col>
+                                          <ion-col>
+                                              <ion-item>
+                                                  <ion-label>F</ion-label>
+                                                  <ion-radio value="F53"></ion-radio>
+                                              </ion-item>
+                                          </ion-col>
+                                      </ion-row>
+                      
+                                      <ion-row class="formulario" radio-group [(ngModel)]="naranja54" align-items-center justify-content: space-around>
+                                              <ion-col>
+                                                <ion-item>
+                                                  <ion-label text-wrap color="dark"><h2 align="justify">Me es difícil terminar una tarea yo solo(a).</h2></ion-label>
+                                                </ion-item>
+                                              </ion-col>
+                                              <ion-col>
+                                                  <ion-item>
+                                                      <ion-label>N</ion-label>
+                                                      <ion-radio value="N54"></ion-radio>
+                                                  </ion-item>
+                                              </ion-col>
+                                              <ion-col>
+                                                  <ion-item>
+                                                      <ion-label>O</ion-label>
+                                                      <ion-radio value="O54"></ion-radio>
+                                                  </ion-item>
+                                              </ion-col>
+                                              <ion-col>
+                                                  <ion-item>
+                                                      <ion-label>F</ion-label>
+                                                      <ion-radio value="F54"></ion-radio>
+                                                  </ion-item>
+                                              </ion-col>
+                                      </ion-row>
+                                  
+                                <ion-row class="formulario" radio-group [(ngModel)]="naranja55" align-items-center justify-content: space-around>
+                                    <ion-col>
+                                      <ion-item>
+                                        <ion-label text-wrap color="dark"><h2 align="justify">Los demás dicen que me distraigo con facilidad.</h2></ion-label>
+                                      </ion-item>
+                                    </ion-col>
+                                    <ion-col>
+                                        <ion-item>
+                                            <ion-label>N</ion-label>
+                                            <ion-radio value="N55"></ion-radio>
+                                        </ion-item>
+                                    </ion-col>
+                                    <ion-col>
+                                        <ion-item>
+                                            <ion-label>O</ion-label>
+                                            <ion-radio value="O55"></ion-radio>
+                                        </ion-item>
+                                    </ion-col>
+                                    <ion-col>
+                                        <ion-item>
+                                            <ion-label>F</ion-label>
+                                            <ion-radio value="F55"></ion-radio>
+                                        </ion-item>
+                                    </ion-col>
+                                </ion-row>
+                      
+                                <ion-row class="formulario" radio-group [(ngModel)]="naranja56" align-items-center justify-content: space-around>
+                                      <ion-col>
+                                        <ion-item>
+                                          <ion-label text-wrap color="dark"><h2 align="justify">Tengo dificultades para recordar las cosas (como direcciones y números de teléfono), aún durante algunos minutos.</h2></ion-label>
+                                        </ion-item>
+                                      </ion-col>
+                                      <ion-col>
+                                          <ion-item>
+                                              <ion-label>N</ion-label>
+                                              <ion-radio value="N56"></ion-radio>
+                                          </ion-item>
+                                      </ion-col>
+                                      <ion-col>
+                                          <ion-item>
+                                              <ion-label>O</ion-label>
+                                              <ion-radio value="O56"></ion-radio>
+                                          </ion-item>
+                                      </ion-col>
+                                      <ion-col>
+                                          <ion-item>
+                                              <ion-label>F</ion-label>
+                                              <ion-radio value="F56"></ion-radio>
+                                          </ion-item>
+                                      </ion-col>
+                                  </ion-row>
+                      
+                                  <ion-row class="formulario" radio-group [(ngModel)]="naranja57" align-items-center justify-content: space-around>
+                                          <ion-col>
+                                            <ion-item>
+                                              <ion-label text-wrap color="dark"><h2 align="justify">Los demás dicen que soy demasiado sensible.</h2></ion-label>
+                                            </ion-item>
+                                          </ion-col>
+                                          <ion-col>
+                                              <ion-item>
+                                                  <ion-label>N</ion-label>
+                                                  <ion-radio value="N57"></ion-radio>
+                                              </ion-item>
+                                          </ion-col>
+                                          <ion-col>
+                                              <ion-item>
+                                                  <ion-label>O</ion-label>
+                                                  <ion-radio value="O57"></ion-radio>
+                                              </ion-item>
+                                          </ion-col>
+                                          <ion-col>
+                                              <ion-item>
+                                                  <ion-label>F</ion-label>
+                                                  <ion-radio value="F57"></ion-radio>
+                                              </ion-item>
+                                          </ion-col>
+                                  </ion-row>
+                      
+                                  <ion-row class="formulario" radio-group [(ngModel)]="naranja58" align-items-center justify-content: space-around>
+                                              <ion-col>
+                                                <ion-item>
+                                                  <ion-label text-wrap color="dark"><h2 align="justify">Hago todo aceleradamente.</h2></ion-label>
+                                                </ion-item>
+                                              </ion-col>
+                                              <ion-col>
+                                                  <ion-item>
+                                                      <ion-label>N</ion-label>
+                                                      <ion-radio value="N58"></ion-radio>
+                                                  </ion-item>
+                                              </ion-col>
+                                              <ion-col>
+                                                  <ion-item>
+                                                      <ion-label>O</ion-label>
+                                                      <ion-radio value="O58"></ion-radio>
+                                                  </ion-item>
+                                              </ion-col>
+                                              <ion-col>
+                                                  <ion-item>
+                                                      <ion-label>F</ion-label>
+                                                      <ion-radio value="F58"></ion-radio>
+                                                  </ion-item>
+                                              </ion-col>
+                                   </ion-row>
+                      
+                                   <ion-row class="formulario" radio-group [(ngModel)]="naranja59" align-items-center justify-content: space-around>
+                                          <ion-col>
+                                            <ion-item>
+                                              <ion-label text-wrap color="dark"><h2 align="justify">Me molesto.</h2></ion-label>
+                                            </ion-item>
+                                          </ion-col>
+                                          <ion-col>
+                                              <ion-item>
+                                                  <ion-label>N</ion-label>
+                                                  <ion-radio value="N59"></ion-radio>
+                                              </ion-item>
+                                          </ion-col>
+                                          <ion-col>
+                                              <ion-item>
+                                                  <ion-label>O</ion-label>
+                                                  <ion-radio value="O59"></ion-radio>
+                                              </ion-item>
+                                          </ion-col>
+                                          <ion-col>
+                                              <ion-item>
+                                                  <ion-label>F</ion-label>
+                                                  <ion-radio value="F59"></ion-radio>
+                                              </ion-item>
+                                          </ion-col>
+                                   </ion-row>
+                      
+                                   <ion-row class="formulario" radio-group [(ngModel)]="naranja60" align-items-center justify-content: space-around>
+                                          <ion-col>
+                                            <ion-item>
+                                              <ion-label text-wrap color="dark"><h2 align="justify">Mi recámara o mi espacio están frecuentemente desordenadas.</h2></ion-label>
+                                            </ion-item>
+                                          </ion-col>
+                                          <ion-col>
+                                              <ion-item>
+                                                  <ion-label>N</ion-label>
+                                                  <ion-radio value="N60"></ion-radio>
+                                              </ion-item>
+                                          </ion-col>
+                                          <ion-col>
+                                              <ion-item>
+                                                  <ion-label>O</ion-label>
+                                                  <ion-radio value="O60"></ion-radio>
+                                              </ion-item>
+                                          </ion-col>
+                                          <ion-col>
+                                              <ion-item>
+                                                  <ion-label>F</ion-label>
+                                                  <ion-radio value="F60"></ion-radio>
+                                              </ion-item>
+                                          </ion-col>
+                                   </ion-row>
+
+                                   <ion-row class="formulario" radio-group align-items-center [(ngModel)]="naranja61" justify-content: space-around>
+                                        <ion-col>
+                                            <ion-item>
+                                            <ion-label text-wrap color="dark"><h2 align="justify">No me gusta que haya cambios inesperados en mi rutina diaria.</h2></ion-label>
+                                            </ion-item>
+                                        </ion-col>
+                                        <ion-col>
+                                            <ion-item>
+                                                <ion-label>N</ion-label>
+                                                <ion-radio value="N61"></ion-radio>
+                                            </ion-item>
+                                        </ion-col>
+                                        <ion-col>
+                                            <ion-item>
+                                                <ion-label>O</ion-label>
+                                                <ion-radio value="O61"></ion-radio>
+                                            </ion-item>
+                                        </ion-col>
+                                        <ion-col>
+                                            <ion-item>
+                                                <ion-label>F</ion-label>
+                                                <ion-radio value="F61"></ion-radio>
+                                            </ion-item>
+                                        </ion-col>
+                                    </ion-row>
+                            
+                                    <ion-row class="formulario" radio-group [(ngModel)]="naranja62" align-items-center justify-content: space-around>
+                                          <ion-col>
+                                            <ion-item>
+                                              <ion-label text-wrap color="dark"><h2 align="justify">No se me ocurrre que hacer con mi tiempo libre.</h2></ion-label>
+                                            </ion-item>
+                                          </ion-col>
+                                          <ion-col>
+                                              <ion-item>
+                                                  <ion-label>N</ion-label>
+                                                  <ion-radio value="N62"></ion-radio>
+                                              </ion-item>
+                                          </ion-col>
+                                          <ion-col>
+                                              <ion-item>
+                                                  <ion-label>O</ion-label>
+                                                  <ion-radio value="O62"></ion-radio>
+                                              </ion-item>
+                                          </ion-col>
+                                          <ion-col>
+                                              <ion-item>
+                                                  <ion-label>F</ion-label>
+                                                  <ion-radio value="F62"></ion-radio>
+                                              </ion-item>
+                                          </ion-col>
+                                      </ion-row>
+                          
+                                      <ion-row class="formulario" radio-group [(ngModel)]="naranja63" align-items-center justify-content: space-around>
+                                              <ion-col>
+                                                <ion-item>
+                                                  <ion-label text-wrap color="dark"><h2 align="justify">No planeo mis tareas de antemano.</h2></ion-label>
+                                                </ion-item>
+                                              </ion-col>
+                                              <ion-col>
+                                                  <ion-item>
+                                                      <ion-label>N</ion-label>
+                                                      <ion-radio value="N63"></ion-radio>
+                                                  </ion-item>
+                                              </ion-col>
+                                              <ion-col>
+                                                  <ion-item>
+                                                      <ion-label>O</ion-label>
+                                                      <ion-radio value="O63"></ion-radio>
+                                                  </ion-item>
+                                              </ion-col>
+                                              <ion-col>
+                                                  <ion-item>
+                                                      <ion-label>F</ion-label>
+                                                      <ion-radio value="F63"></ion-radio>
+                                                  </ion-item>
+                                              </ion-col>
+                                          </ion-row>
+                          
+                                          <ion-row class="formulario" radio-group [(ngModel)]="naranja64" align-items-center justify-content: space-around>
+                                                  <ion-col>
+                                                    <ion-item>
+                                                      <ion-label text-wrap color="dark"><h2 align="justify">Los demás dicen que no pienso antes de actuar.</h2></ion-label>
+                                                    </ion-item>
+                                                  </ion-col>
+                                                  <ion-col>
+                                                      <ion-item>
+                                                          <ion-label>N</ion-label>
+                                                          <ion-radio value="N64"></ion-radio>
+                                                      </ion-item>
+                                                  </ion-col>
+                                                  <ion-col>
+                                                      <ion-item>
+                                                          <ion-label>O</ion-label>
+                                                          <ion-radio value="O64"></ion-radio>
+                                                      </ion-item>
+                                                  </ion-col>
+                                                  <ion-col>
+                                                      <ion-item>
+                                                          <ion-label>F</ion-label>
+                                                          <ion-radio value="F64"></ion-radio>
+                                                      </ion-item>
+                                                  </ion-col>
+                                          </ion-row>
+                                      
+                                    <ion-row class="formulario" radio-group [(ngModel)]="naranja65" align-items-center justify-content: space-around>
+                                        <ion-col>
+                                          <ion-item>
+                                            <ion-label text-wrap color="dark"><h2 align="justify">Me es difícil encontrar las cosas en mi recámara, armario, clóset o escritorio.</h2></ion-label>
+                                          </ion-item>
+                                        </ion-col>
+                                        <ion-col>
+                                            <ion-item>
+                                                <ion-label>N</ion-label>
+                                                <ion-radio value="N65"></ion-radio>
+                                            </ion-item>
+                                        </ion-col>
+                                        <ion-col>
+                                            <ion-item>
+                                                <ion-label>O</ion-label>
+                                                <ion-radio value="O65"></ion-radio>
+                                            </ion-item>
+                                        </ion-col>
+                                        <ion-col>
+                                            <ion-item>
+                                                <ion-label>F</ion-label>
+                                                <ion-radio value="F65"></ion-radio>
+                                            </ion-item>
+                                        </ion-col>
+                                    </ion-row>
+                          
+                                    <ion-row class="formulario" radio-group [(ngModel)]="naranja66" align-items-center justify-content: space-around>
+                                          <ion-col>
+                                            <ion-item>
+                                              <ion-label text-wrap color="dark"><h2 align="justify">Tengo problemas para organizar mis actividades.</h2></ion-label>
+                                            </ion-item>
+                                          </ion-col>
+                                          <ion-col>
+                                              <ion-item>
+                                                  <ion-label>N</ion-label>
+                                                  <ion-radio value="N66"></ion-radio>
+                                              </ion-item>
+                                          </ion-col>
+                                          <ion-col>
+                                              <ion-item>
+                                                  <ion-label>O</ion-label>
+                                                  <ion-radio value="O66"></ion-radio>
+                                              </ion-item>
+                                          </ion-col>
+                                          <ion-col>
+                                              <ion-item>
+                                                  <ion-label>F</ion-label>
+                                                  <ion-radio value="F66"></ion-radio>
+                                              </ion-item>
+                                          </ion-col>
+                                      </ion-row>
+                          
+                                      <ion-row class="formulario" radio-group [(ngModel)]="naranja67" align-items-center justify-content: space-around>
+                                              <ion-col>
+                                                <ion-item>
+                                                  <ion-label text-wrap color="dark"><h2 align="justify">Después de tener un problema, no lo supero fácilmente.</h2></ion-label>
+                                                </ion-item>
+                                              </ion-col>
+                                              <ion-col>
+                                                  <ion-item>
+                                                      <ion-label>N</ion-label>
+                                                      <ion-radio value="N67"></ion-radio>
+                                                  </ion-item>
+                                              </ion-col>
+                                              <ion-col>
+                                                  <ion-item>
+                                                      <ion-label>O</ion-label>
+                                                      <ion-radio value="O67"></ion-radio>
+                                                  </ion-item>
+                                              </ion-col>
+                                              <ion-col>
+                                                  <ion-item>
+                                                      <ion-label>F</ion-label>
+                                                      <ion-radio value="F67"></ion-radio>
+                                                  </ion-item>
+                                              </ion-col>
+                                      </ion-row>
+                          
+                                      <ion-row class="formulario" radio-group [(ngModel)]="naranja68" align-items-center justify-content: space-around>
+                                                  <ion-col>
+                                                    <ion-item>
+                                                      <ion-label text-wrap color="dark"><h2 align="justify">Me es difícil hacer más de una cosa al mismo tiempo.</h2></ion-label>
+                                                    </ion-item>
+                                                  </ion-col>
+                                                  <ion-col>
+                                                      <ion-item>
+                                                          <ion-label>N</ion-label>
+                                                          <ion-radio value="N68"></ion-radio>
+                                                      </ion-item>
+                                                  </ion-col>
+                                                  <ion-col>
+                                                      <ion-item>
+                                                          <ion-label>O</ion-label>
+                                                          <ion-radio value="O68"></ion-radio>
+                                                      </ion-item>
+                                                  </ion-col>
+                                                  <ion-col>
+                                                      <ion-item>
+                                                          <ion-label>F</ion-label>
+                                                          <ion-radio value="F68"></ion-radio>
+                                                      </ion-item>
+                                                  </ion-col>
+                                       </ion-row>
+                          
+                                       <ion-row class="formulario" radio-group [(ngModel)]="naranja69" align-items-center justify-content: space-around>
+                                              <ion-col>
+                                                <ion-item>
+                                                  <ion-label text-wrap color="dark"><h2 align="justify">Cambio frecuentemente de estado de ánimo.</h2></ion-label>
+                                                </ion-item>
+                                              </ion-col>
+                                              <ion-col>
+                                                  <ion-item>
+                                                      <ion-label>N</ion-label>
+                                                      <ion-radio value="N69"></ion-radio>
+                                                  </ion-item>
+                                              </ion-col>
+                                              <ion-col>
+                                                  <ion-item>
+                                                      <ion-label>O</ion-label>
+                                                      <ion-radio value="O69"></ion-radio>
+                                                  </ion-item>
+                                              </ion-col>
+                                              <ion-col>
+                                                  <ion-item>
+                                                      <ion-label>F</ion-label>
+                                                      <ion-radio value="F69"></ion-radio>
+                                                  </ion-item>
+                                              </ion-col>
+                                       </ion-row>
+                          
+                                       <ion-row class="formulario" radio-group [(ngModel)]="naranja70" align-items-center justify-content: space-around>
+                                              <ion-col>
+                                                <ion-item>
+                                                  <ion-label text-wrap color="dark"><h2 align="justify">No analizo las consecuencias antes de actuar.</h2></ion-label>
+                                                </ion-item>
+                                              </ion-col>
+                                              <ion-col>
+                                                  <ion-item>
+                                                      <ion-label>N</ion-label>
+                                                      <ion-radio value="N70"></ion-radio>
+                                                  </ion-item>
+                                              </ion-col>
+                                              <ion-col>
+                                                  <ion-item>
+                                                      <ion-label>O</ion-label>
+                                                      <ion-radio value="O70"></ion-radio>
+                                                  </ion-item>
+                                              </ion-col>
+                                              <ion-col>
+                                                  <ion-item>
+                                                      <ion-label>F</ion-label>
+                                                      <ion-radio value="F70"></ion-radio>
+                                                  </ion-item>
+                                              </ion-col>
+                                       </ion-row>
+                                
+                                       <ion-row class="formulario" radio-group align-items-center [(ngModel)]="naranja71" justify-content: space-around>
+                                            <ion-col>
+                                                <ion-item>
+                                                <ion-label text-wrap color="dark"><h2 align="justify">Se me hace difícil organizar mi trabajo.</h2></ion-label>
+                                                </ion-item>
+                                            </ion-col>
+                                            <ion-col>
+                                                <ion-item>
+                                                    <ion-label>N</ion-label>
+                                                    <ion-radio value="N71"></ion-radio>
+                                                </ion-item>
+                                            </ion-col>
+                                            <ion-col>
+                                                <ion-item>
+                                                    <ion-label>O</ion-label>
+                                                    <ion-radio value="O71"></ion-radio>
+                                                </ion-item>
+                                            </ion-col>
+                                            <ion-col>
+                                                <ion-item>
+                                                    <ion-label>F</ion-label>
+                                                    <ion-radio value="F71"></ion-radio>
+                                                </ion-item>
+                                            </ion-col>
+                                        </ion-row>
+                                
+                                        <ion-row class="formulario" radio-group [(ngModel)]="naranja72" align-items-center justify-content: space-around>
+                                              <ion-col>
+                                                <ion-item>
+                                                  <ion-label text-wrap color="dark"><h2 align="justify">Me molesto rápidamente o con facilidad por pequeñeces.</h2></ion-label>
+                                                </ion-item>
+                                              </ion-col>
+                                              <ion-col>
+                                                  <ion-item>
+                                                      <ion-label>N</ion-label>
+                                                      <ion-radio value="N72"></ion-radio>
+                                                  </ion-item>
+                                              </ion-col>
+                                              <ion-col>
+                                                  <ion-item>
+                                                      <ion-label>O</ion-label>
+                                                      <ion-radio value="O72"></ion-radio>
+                                                  </ion-item>
+                                              </ion-col>
+                                              <ion-col>
+                                                  <ion-item>
+                                                      <ion-label>F</ion-label>
+                                                      <ion-radio value="F72"></ion-radio>
+                                                  </ion-item>
+                                              </ion-col>
+                                          </ion-row>
+                              
+                                          <ion-row class="formulario" radio-group [(ngModel)]="naranja73" align-items-center justify-content: space-around>
+                                                  <ion-col>
+                                                    <ion-item>
+                                                      <ion-label text-wrap color="dark"><h2 align="justify">Soy una persona impulsiva.</h2></ion-label>
+                                                    </ion-item>
+                                                  </ion-col>
+                                                  <ion-col>
+                                                      <ion-item>
+                                                          <ion-label>N</ion-label>
+                                                          <ion-radio value="N73"></ion-radio>
+                                                      </ion-item>
+                                                  </ion-col>
+                                                  <ion-col>
+                                                      <ion-item>
+                                                          <ion-label>O</ion-label>
+                                                          <ion-radio value="O73"></ion-radio>
+                                                      </ion-item>
+                                                  </ion-col>
+                                                  <ion-col>
+                                                      <ion-item>
+                                                          <ion-label>F</ion-label>
+                                                          <ion-radio value="F73"></ion-radio>
+                                                      </ion-item>
+                                                  </ion-col>
+                                              </ion-row>
+                              
+                                              <ion-row class="formulario" radio-group [(ngModel)]="naranja74" align-items-center justify-content: space-around>
+                                                      <ion-col>
+                                                        <ion-item>
+                                                          <ion-label text-wrap color="dark"><h2 align="justify">No ordeno mis cosas.</h2></ion-label>
+                                                        </ion-item>
+                                                      </ion-col>
+                                                      <ion-col>
+                                                          <ion-item>
+                                                              <ion-label>N</ion-label>
+                                                              <ion-radio value="N74"></ion-radio>
+                                                          </ion-item>
+                                                      </ion-col>
+                                                      <ion-col>
+                                                          <ion-item>
+                                                              <ion-label>O</ion-label>
+                                                              <ion-radio value="O74"></ion-radio>
+                                                          </ion-item>
+                                                      </ion-col>
+                                                      <ion-col>
+                                                          <ion-item>
+                                                              <ion-label>F</ion-label>
+                                                              <ion-radio value="F74"></ion-radio>
+                                                          </ion-item>
+                                                      </ion-col>
+                                              </ion-row>
+                                          
+                                        <ion-row class="formulario" radio-group [(ngModel)]="naranja75" align-items-center justify-content: space-around>
+                                            <ion-col>
+                                              <ion-item>
+                                                <ion-label text-wrap color="dark"><h2 align="justify">Me es difícil terminar mi trabajo.</h2></ion-label>
+                                              </ion-item>
+                                            </ion-col>
+                                            <ion-col>
+                                                <ion-item>
+                                                    <ion-label>N</ion-label>
+                                                    <ion-radio value="N75"></ion-radio>
+                                                </ion-item>
+                                            </ion-col>
+                                            <ion-col>
+                                                <ion-item>
+                                                    <ion-label>O</ion-label>
+                                                    <ion-radio value="O75"></ion-radio>
+                                                </ion-item>
+                                            </ion-col>
+                                            <ion-col>
+                                                <ion-item>
+                                                    <ion-label>F</ion-label>
+                                                    <ion-radio value="F75"></ion-radio>
+                                                </ion-item>
+                                            </ion-col>
+                                        </ion-row>
+
+  
+        </ion-grid>
+    </ion-list>
+    {{Inhibicion}}
+  
+  </ion-content>
